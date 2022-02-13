@@ -1,0 +1,17 @@
+{% block content%}
+<h2>Edite</h2>
+<form  method="POST">
+    {% csrf_token %}
+<div>
+    {% for champ in form %}
+
+    {{ champ }}
+
+    {% endfor%}
+
+
+    
+</div>
+<input type="submit" value="Edite">
+</form>
+{% endblock %}
